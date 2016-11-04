@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Main | iTunes Artwork Finder</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="css/mainstyles.css" rel="stylesheet" type="text/css"/>
+        <script src="js/script.js"></script>
+    </head>
+    
+    <body>
+        <div id="mainbox">
+            <p id="title">iTunes Artwork Finder</p>
+            <div class="input">
+            <select id="typecombobox">
+                <option value="movie">Movie</option>
+                <option value="tvshow">TV Show</option>
+                <option value="album">Album</option>
+                <option value="musicvideo">Music Video</option>
+                <option value="book">Book</option>
+                <option value="audiobook">Audiobook</option>
+                <option value="podcast">Podcast</option>
+                <option value="app">App</option>
+            </select> 
+            </div>
+            <div class="input">
+                <input id="inputtb" type="text" placeholder="Enter link here">
+            </div>
+            <div class="input">
+                <button id="getart" type="button" onclick="getartwork();">Get Artwork</button>
+            </div>
+            <div class="output">
+            <p id="label">Artwork Link</p>
+            </div>
+            <div class="output">
+                <input id="outputtb" type="text">
+            </div>
+            <p id="instructions">
+                Instructions: Search in Google for the iTunes media content you want and open the webpage. 
+                Right click on the image thumbnail at the left and click 'View Image' (it may vary depending 
+                on your web browser). Once the image is open, copy the link and paste it where indicated here. 
+                Select the type of content you want and then click 'Get Artwork'. The link with the artwork at 
+                the highest resolution available will appear below, just copy and paste it into your browser and there you go.
+            </p>    
+            <p id="credits">
+                by Carlos Martinez
+            </p>
+        </div>
+    </body>
+</html>

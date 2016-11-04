@@ -11,7 +11,7 @@
 }
 
 
-#continue {
+#continue{
     display: block;
     background-color: #2bddef;
     border: none;
@@ -27,14 +27,14 @@
     margin-top:10%;
 }
 
-#continue span {
+#continue span{
     cursor: pointer;
     display: block;
     position: relative;
     transition: 0.5s;
 }
 
-#continue span:after {
+#continue span:after{
     content: '>>';
     position: absolute;
     opacity: 0;
@@ -43,11 +43,11 @@
     transition: 0.5s;
 }
 
-#continue:hover span {
+#continue:hover span{
     padding-right: 25px;
 }
 
-#continue:hover span:after {
+#continue:hover span:after{
     opacity: 1;
     right: 0;
 }

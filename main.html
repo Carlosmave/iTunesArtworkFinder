@@ -13,16 +13,16 @@
         <div id="mainbox">
             <p id="title">iTunes Artwork Finder</p>
             <div class="input">
-            <select id="typecombobox">
-                <option value="movie">Movie</option>
-                <option value="tvshow">TV Show</option>
-                <option value="album">Album</option>
-                <option value="musicvideo">Music Video</option>
-                <option value="book">Book</option>
-                <option value="audiobook">Audiobook</option>
-                <option value="podcast">Podcast</option>
-                <option value="app">App</option>
-            </select> 
+                <select id="typecombobox">
+                    <option value="movie">Movie</option>
+                    <option value="tvshow">TV Show</option>
+                    <option value="album">Album</option>
+                    <option value="musicvideo">Music Video</option>
+                    <option value="book">Book</option>
+                    <option value="audiobook">Audiobook</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="app">App</option>
+                </select> 
             </div>
             <div class="input">
                 <input id="inputtb" type="text" placeholder="Enter link here">
@@ -31,11 +31,17 @@
                 <button id="getart" type="button" onclick="getartwork();">Get Artwork</button>
             </div>
             <div class="output">
-            <p id="label">Artwork Link</p>
+                <p id="label">Artwork Link</p>
             </div>
             <div class="output">
                 <input id="outputtb" type="text">
             </div>
+            <div class="hyperoutput">
+                <p id="hyperlabel">Artwork Hyperlink</p>     
+            </div>
+            <div class="hyperoutput">
+                <p id="hyperlink"></p>
+            </div>      
             <p id="instructions">
                 Instructions: Search in Google for the iTunes media content you want and open the webpage. 
                 Right click on the image thumbnail at the left and click 'View Image' (it may vary depending 

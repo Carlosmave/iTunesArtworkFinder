@@ -8,44 +8,38 @@ function getartwork(){
     var sublink=null;
     var imglink=null;
     var inputText=null;
-    var ftype=null;
     
     //Get text from inputTextBox    
     inputText = document.getElementById("inputtb").value;
         
    //Main Method
-    if(inputText!=="" && inputText.length>50 && inputText.substring(10,22)==="mzstatic.com"){
+    if(inputText!=="" && inputText.length>50 && inputText.substring(11,23)==="mzstatic.com"){
         var index = document.getElementById("typecombobox").value;
-        sublink=inputText.substring(30);
+        sublink=inputText.substring(36);
         switch(index){
             case "movie":
-                link2=sublink.substring(0, sublink.length-19);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "tvshow":
-                link2=sublink.substring(0, sublink.length-18);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "album":
-                link2=sublink.substring(0, sublink.length-18);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "musicvideo":
                 link2=sublink.substring(0, sublink.length-21);
                 break;
             case "book":
-                link2=sublink.substring(0, sublink.length-18);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "audiobook":
-                link2=sublink.substring(0, sublink.length-18);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "podcast":
-                link2=sublink.substring(0, sublink.length-18);
+                link2=sublink.substring(0, sublink.length-21);
                 break;
             case "app":
-                ftype=sublink.substring(70);
-                if(ftype==="png"){
-                    link2=sublink.substring(0, sublink.length-16);
-                }else if (ftype==="jpeg"){
-                    link2=sublink.substring(0, sublink.length-17);
-                }   
+                link2=sublink.substring(0, sublink.length-21);
                 break;      
         }
                 imglink=link1.concat(link2).concat(link3);
@@ -62,7 +56,6 @@ function getartwork(){
     sublink=null;
     imglink=null;
     inputText=null;
-    ftype=null;
     
 }
        
